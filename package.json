@@ -1,13 +1,15 @@
 {
   "name": "react-native-crashit",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Raise a test react-native error.",
   "main": "index.js",
   "keywords": [
     "react-native",
     "test"
   ],
-  "author": "",
+  "author": "wdamien",
+  "homepage": "https://github.com/wdamien/react-native-crashit",
+  "repository": {"url": "https://github.com/react-native-community/react-native-netinfo.git"},
   "license": "MIT",
   "peerDependencies": {
     "react-native": "*"

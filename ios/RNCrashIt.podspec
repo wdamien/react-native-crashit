@@ -1,18 +1,20 @@
+require 'json'
+
+package = JSON.parse(File.read(File.join(__dir__, '../package.json')))
 
 Pod::Spec.new do |s|
   s.name         = "RNCrashIt"
-  s.version      = "1.0.0"
-  s.summary      = "RNCrashIt"
-  s.description  = <<-DESC
-                  RNCrashIt
-                   DESC
-  s.homepage     = "https://github.com/wdmaien/react-native-crashit"
-  s.license      = "MIT"
+  s.version      = package['version']
+  s.summary      = package['description']
+  s.license      = package['license']
+
+  s.authors      = package['author']
+  s.homepage     = package['homepage']
+
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://github.com/wdmaien/react-native-crashit.git", :tag => "master" }
-  s.source_files  = "*.{h,m}"
+  s.source       = { :git => package["repository"]["url"], :tag => "v#{s.version}" }
+  s.source_files = "*.{h,m}"
   s.requires_arc = true
 
   s.dependency "React"
-
 end
