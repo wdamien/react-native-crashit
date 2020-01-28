@@ -1,0 +1,15 @@
+{
+  "name": "react-native-crashit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "test"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "*"
+  }
+}

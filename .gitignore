@@ -1,0 +1,23 @@
+# Dependency directory
+node_modules
+
+# OSX
+.DS_Store
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+xcuserdata
+*.xccheckout
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# Idea and Android Studio
+*.iml
+.idea
+.gradle
+local.properties
